@@ -1,27 +1,233 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="name" content="Banana">
-    <meta name="description" content="A information site about banana">
-    <meta name="keywords" content="Banana, Information about Banana, Nutrition, Healthy">
-    <meta name="author" content="TBA"> <!-- To be assigned -->
-    <title>Banana</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Custom CSS, if any -->
 
-  </head>
-  <body>
-    <h1>Hello World, its bananas</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="name" content="Banana">
+  <meta name="description" content="A information site about banana">
+  <meta name="keywords" content="Banana, Information about Banana, Nutrition, Healthy">
+  <meta name="author" content="TBA"> <!-- To be assigned -->
+  <title>Banana</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Righteous&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a074c2fac0.js" crossorigin="anonymous"></script>
+  <!-- Custom CSS, if any -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
+<body>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Navbar class, moves it inline rather than vertical, shade of the links, background color -->
+      <nav class="navbar navbar-expand-md navbar-dark  ">
 
-  </body>
+        <a class="navbar-brand" href="#">Banana</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#benefits" class="nav-link">Powerhouse</a>
+            </li>
+            <li class="nav-item">
+              <a href="#information" class="nav-link">Info</a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <h1>Powerhouse of packed nutrients and yet stupendously delicious </h1>
+          <button type="button" class="btn btn-light btn-lg btnPurchase" name="button">Purchase</button>
+        </div>
+
+        <div class="col-lg-6 col-md-6 img-div">
+          <img src="images/banana1.jpg" class="mainImg" alt="Picture of Banana">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+          <span class="fas fa-heartbeat font-icon"></span>
+          <h2>High in Potassium</h2>
+          <p>Potassium is good for your heart health and blood pressure. Its
+            movement in and out of cells helps maintain a regular heartbeat. </p>
+        </div>
+        <div class="col-lg-4">
+          <span class="fas fa-plus-square font-icon"></span>
+          <h2>High in Vitamin B6</h2>
+          <p>Vit B6 helps production of haemoglobin. Haemoglobin is essential for blood
+            circulatory system.</p>
+        </div>
+        <div class="col-lg-4">
+          <span class="fas fa-walking font-icon"></span>
+          <h2>Good source of Magnesium</h2>
+          <p>Magnesium helps to regulate Calcium and Vit D. Magnesium is vital for healthy
+            bone formation in the body.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testamonial">
+
+    <div class="carousel slide" id="carouselSlider" data-ride="false">
+      <div class="carousel-inner container-carousel">
+
+        <div class="carousel-item active">
+          <h2>Banana is a superfood that I cannot live without. It provides
+            instant energy during my sports activities. Eat before a workout,
+            during or after.</h2>
+          <img src="images/MJ.jpg" alt="picture of Maisie">
+          <em>Maisie Johnson</em>
+        </div>
+
+        <div class="carousel-item">
+          <h2>Nothing is more versitile than a banana. Eat it as it is, put it in a
+            smoothie, make a dessert.
+            Eat unripe, high in starch. Eat ripe, a natural sweetener. </h2>
+          <img src="images/joshA.jpg" alt="picture of Josh">
+          <em>Josh Anderson</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselSlider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselSlider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="press">
+    <div class="container-press">
+      <img src="images/healthy1.png" alt="">
+      <img src="images/healthy2.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="information">
+
+    <h2> Nutrition packed in a Banana</h2>
+    <p>all the data shown below are per 100g</p>
+
+    <table class="table table-dark table-striped table-hover">
+      <thead>
+        <th>Nutrients</th>
+        <th>Per 100g</th>
+        <th>units</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Energy</td>
+          <td>89</td>
+          <td>kcal</td>
+        </tr>
+        <tr>
+          <td>Fibre</td>
+          <td>2.6</td>
+          <td>g</td>
+        </tr>
+        <tr>
+          <td>Fat</td>
+          <td>0.33</td>
+          <td>g</td>
+        </tr>
+        <tr>
+          <td>Protein</td>
+          <td>1.1</td>
+          <td>g</td>
+        </tr>
+        <tr>
+          <td>Carb</td>
+          <td>22.84</td>
+          <td>g</td>
+        </tr>
+        <tr>
+          <td>Calcium</td>
+          <td>5</td>
+          <td>mg</td>
+        </tr>
+        <tr>
+          <td>Iron</td>
+          <td>0.26</td>
+          <td>mg</td>
+        </tr>
+        <tr>
+          <td>Magnesium</td>
+          <td>27</td>
+          <td>mg</td>
+        </tr>
+        <tr>
+          <td>Phosphorous</td>
+          <td>22</td>
+          <td>mg</td>
+        </tr>
+        <tr>
+          <td>Potassium</td>
+          <td>358</td>
+          <td>mg</td>
+        </tr>
+        <tr>
+          <td>Zinc</td>
+          <td>0.15</td>
+          <td>mg</td>
+        </tr>
+        <tr>
+          <td>Vitamin B6</td>
+          <td>0.367</td>
+          <td>mg</td>
+        </tr>
+        <tr>
+          <td>Nacin</td>
+          <td>0.665</td>
+          <td>mg</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="cta">
+    <div class="container-cta">
+
+      <h2>Did you know bananas are berries?</h2>
+      <h2>Thats bananas!</h2>
+      <button type="button" class="btn btn-lg btn-light" name="button">Purchase</button>
+      
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p><i class="fab fa-twitter social-icons"></i> <i class="fab fa-facebook-f social-icons"></i> <i class="fab fa-instagram social-icons"></i> <i class="fas fa-envelope social-icons"></i></p>
+    <p> &copy; Copyright 2020; All rights reserved. </p>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
