@@ -2,20 +2,39 @@ body {
   font-family: "Lato", Arial, sans-serif;
 }
 
-p{
+p {
   color: #8f8f8f;
 }
 
+/* Containers */
 .container-fluid {
   padding: 0 10% 3%;
 }
 
+.container-2 {
+  padding: 7% 15%;
+}
+
+.container-press {
+  padding: 0 15% 2%;
+}
+
+.container-cta {
+  padding: 10% 15%;
+}
+
+/* Buttons */
+.btnPurchase {
+  margin-top: 3%;
+}
+
+
+/* Title */
 .navbar {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* Header */
 #title {
   background-color: #FBD51A;
   color: #FFF;
@@ -25,7 +44,7 @@ p{
   font-family: "Righteous";
 }
 
-#title div.row{
+#title div.row {
   margin-top: 5%;
 }
 
@@ -34,13 +53,10 @@ p{
   font-weight: bold;
 }
 
-.btnPurchase {
-  margin-top: 3%;
+.img-div {
+  transform: translate(20%, -10%);
 }
 
-.img-div {
-  transform: translate(20%,-10%);
-}
 .mainImg {
   width: 45%;
   transform: rotate(-90deg);
@@ -58,19 +74,14 @@ p{
 }
 
 .font-icon:hover {
-  color:#8A0303;
+  color: #8A0303;
 }
 
 /* testamonial*/
 #testamonial {
   background-color: #CEC434;
   color: #FFF;
-
   text-align: center;
-}
-
-.container-carousel {
-  padding: 7% 15%;
 }
 
 #testamonial h2 {
@@ -85,13 +96,8 @@ p{
 
 /* Press */
 #press {
-  background-color:#CEC434 ;
-
+  background-color: #CEC434;
   text-align: center;
-}
-
-.container-press {
-  padding: 0 15% 2%;
 }
 
 #press img {
@@ -100,8 +106,6 @@ p{
 
 /* Information */
 #information {
-  padding: 7% 15%;
-
   text-align: center;
 }
 
@@ -110,20 +114,12 @@ p{
   font-size: 3rem;
 }
 
-
 /* CTA - call to action */
 #cta {
   background-color: #C38A3D;
   color: #FFF;
-
   text-align: center;
-
 }
-
-.container-cta {
-  padding: 10% 15%;
-}
-
 
 #cta h2 {
   font-weight: 900;
@@ -131,22 +127,9 @@ p{
   line-height: 1.5;
 }
 
-#cta button {
-  margin: 5% 0 0 0;
-}
-
-/* #cta img {
-  width: 20%;
-  display: block;
-  margin: 2% auto;
-  border-radius: 10%;
-} */
-
-
 /* Footer */
 #footer {
   text-align: center;
-
   margin-top: 8%;
   margin-bottom: 2%;
 }
@@ -154,20 +137,16 @@ p{
 .social-icons {
   margin-left: 20px;
   margin-right: 20px;
-
   font-size: 1.2rem;
 }
 
-
-
+/* Media Queries */
 @media screen and (max-width:996px) {
   #title {
     text-align: center;
   }
 
   .img-div {
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
-
-
-  }
+}
